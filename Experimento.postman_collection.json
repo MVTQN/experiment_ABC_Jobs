@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "ambiente_local",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,15 +21,46 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/users",
+					"raw": "http://experiment-env.eba-xpswa3vq.us-east-1.elasticbeanstalk.com/users",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"experiment-env",
+						"eba-xpswa3vq",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
 					],
-					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EB-entorno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test2\",\n    \"email\":\"test@test2.com\",\n    \"password\":\"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://experiment-env.eba-xpswa3vq.us-east-1.elasticbeanstalk.com/users",
+					"protocol": "http",
+					"host": [
+						"experiment-env",
+						"eba-xpswa3vq",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
 					"path": [
 						"users"
 					]

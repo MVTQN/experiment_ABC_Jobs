@@ -17,3 +17,13 @@ def reset():
     Reset().execute()
     return jsonify({'status': 'OK'})
 
+@users_blueprint.route('/', methods = ['GET'])
+def ping():
+    return 'pong'
+
+
+
+
+
+
+
