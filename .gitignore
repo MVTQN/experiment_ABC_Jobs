@@ -55,6 +55,7 @@ cover/
 *.mo
 *.pot
 *.db
+user_IT.zip
 
 # Django stuff:
 *.log
