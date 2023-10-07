@@ -14,7 +14,7 @@ class SessionConfig():
   def config(self):
     db_name = os.environ['DB_NAME'] if 'DB_NAME' in os.environ else 'monitor_users'
     if "ENV" in os.environ and os.environ['ENV'] == 'test':
-      db_name += '_test'
+      db_name
 
     base_config = {
       'host': os.environ['DB_HOST'] if 'DB_HOST' in os.environ else 'localhost',
